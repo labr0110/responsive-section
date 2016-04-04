@@ -1,0 +1,127 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  background-color: #e5c30a;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 45em;
+  overflow: hidden;
+}
+
+.section-letter {
+  width: 40%;
+  float: left;
+  margin: 1rem;
+}
+
+.section-icon {
+  width: 40%;
+  float: left;
+  margin: 1rem;
+}
+
+.section-body {
+  margin: 0 1rem 0 1rem;
+}
+
+section h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+section p {
+  margin: 0 0 1rem 0;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .section-letter {
+    width: 35%;
+  }
+
+  .section-icon {
+    width: 35%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-letter {
+    width: 13%;
+    margin: 1rem;
+  }
+
+  .section-icon {
+    width: 13%;
+    float: right;
+    margin: 1rem;
+  }
+
+  section h2 {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .section-letter {
+    width: 15%;
+    margin: 1rem 2rem 1rem 1rem;
+  }
+
+  .section-icon {
+    width: 15%;
+    float: right;
+    margin: 1rem 2rem 1rem 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
+  }
+
+}
